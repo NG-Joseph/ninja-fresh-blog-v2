@@ -30,7 +30,7 @@ class BlogPostTemplate extends React.Component {
         const { gatsbyImage, description } = node.data.target
         return (
            <GatsbyImage
-              image={getImage(gatsbyImage)}
+              image={"https://source.unsplash.com/random/1600x900"}
               alt={description}
            />
          )
@@ -43,10 +43,10 @@ class BlogPostTemplate extends React.Component {
         <Seo
           title={post.title}
           description={plainTextDescription}
-          image={post.heroImage? `http:${post.heroImage}` : "https://source.unsplash.com/random/1600x900"}
+          image={"https://source.unsplash.com/random/1600x900"}
         />
         <Hero
-          image={post.heroImage|| "https://source.unsplash.com/random/1600x900"}
+          image={"https://source.unsplash.com/random/1600x900"}
           title={post.title}
           content={post.description}
         />
@@ -104,12 +104,7 @@ export const pageQuery = graphql`
       }
       publishDate(formatString: "MMMM Do, YYYY")
       rawDate: publishDate
-      heroImage {
-        gatsbyImage(layout: FULL_WIDTH, placeholder: BLURRED, width: 1280)
-        resize(height: 630, width: 1200) {
-          src
-        }
-      }
+      heroImage 
       body {
         raw
       }

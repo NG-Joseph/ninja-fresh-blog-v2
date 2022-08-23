@@ -14,7 +14,7 @@ class RootIndex extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Hero
-          image={author.heroImage || "https://source.unsplash.com/random/1600x900"}
+          image={"https://source.unsplash.com/random/1600x900"}
           title={author.name}
           content={author.shortBio}
         />
