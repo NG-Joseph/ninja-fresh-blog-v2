@@ -104,7 +104,14 @@ export const pageQuery = graphql`
       }
       publishDate(formatString: "MMMM Do, YYYY")
       rawDate: publishDate
-      heroImage 
+      heroImage {
+        gatsbyImage(
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          width: 424
+          height: 212
+        )
+      }
       body {
         raw
       }
