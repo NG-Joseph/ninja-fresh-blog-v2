@@ -29,8 +29,8 @@ class BlogPostTemplate extends React.Component {
         [BLOCKS.EMBEDDED_ASSET]: (node) => {
         const { gatsbyImage, description } = node.data.target
         return (
-           <GatsbyImage
-              image={"https://source.unsplash.com/random/1600x900"}
+           <img
+              src={"https://source.unsplash.com/random/1600x900"}
               alt={description}
            />
          )
@@ -43,10 +43,10 @@ class BlogPostTemplate extends React.Component {
         <Seo
           title={post.title}
           description={plainTextDescription}
-          image={"https://source.unsplash.com/random/1600x900"}
+          src={"https://source.unsplash.com/random/1600x900"}
         />
         <Hero
-          image={"https://source.unsplash.com/random/1600x900"}
+          src={"https://source.unsplash.com/random/1600x900"}
           title={post.title}
           content={post.description}
         />
