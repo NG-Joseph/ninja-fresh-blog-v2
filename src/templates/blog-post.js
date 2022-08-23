@@ -43,10 +43,10 @@ class BlogPostTemplate extends React.Component {
         <Seo
           title={post.title}
           description={plainTextDescription}
-          image={`http:${post.heroImage.resize.src}`}
+          image={`http:${post.heroImage}`}
         />
         <Hero
-          image={post.heroImage?.gatsbyImage}
+          image={post.heroImage}
           title={post.title}
           content={post.description}
         />
@@ -112,15 +112,6 @@ export const pageQuery = graphql`
       }
       body {
         raw
-        references {
-          ... on ContentfulAsset {
-            contentful_id
-            title
-            description
-            gatsbyImage(width: 1000)
-            __typename
-          }
-        }
       }
       tags
       description {
