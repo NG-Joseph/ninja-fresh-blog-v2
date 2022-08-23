@@ -43,10 +43,10 @@ class BlogPostTemplate extends React.Component {
         <Seo
           title={post.title}
           description={plainTextDescription}
-          image={`http:${post.heroImage}`}
+          image={post.heroImage? `http:${post.heroImage}` : "https://source.unsplash.com/random/1600x900"}
         />
         <Hero
-          image={post.heroImage}
+          image={post.heroImage|| "https://source.unsplash.com/random/1600x900"}
           title={post.title}
           content={post.description}
         />
