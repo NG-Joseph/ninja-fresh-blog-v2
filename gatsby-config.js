@@ -4,8 +4,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Ninja Fresh',
-    description: 'Ninja Fresh blug',
+    title: 'Naija Fresh',
+    description: 'Naija Fresh blug',
   },
   plugins: [
     'gatsby-transformer-sharp',

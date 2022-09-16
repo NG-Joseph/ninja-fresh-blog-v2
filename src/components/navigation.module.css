@@ -20,6 +20,10 @@
   flex-direction: row;
 }
 
+.mainNavigation {
+  font-size: 30px;
+}
+
 .navigationItem a {
   border-bottom: 1.5px solid transparent;
   color: currentColor;
@@ -33,6 +37,7 @@
 
 .logoLink {
   display: flex;
+  font-weight: 50px;
   font-weight: var(--medium);
   align-items: center;
   flex-direction: row;
@@ -58,5 +63,5 @@
   height: var(--size-logo);
   width: var(--size-logo);
   display: block;
-  background-image: url("https://img.icons8.com/sf-ultralight-filled/25/000000/ninja-head.png");
+  background-image: url('https://img.icons8.com/color/25/000000/nigeria-flag.png');
 }

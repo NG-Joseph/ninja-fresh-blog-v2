@@ -6,8 +6,8 @@ import * as styles from './navigation.module.css'
 const Navigation = () => (
   <nav role="navigation" className={styles.container} aria-label="Main">
     <Link to="/" className={styles.logoLink}>
-      <span className={styles.logo} />
-      <span className={styles.navigationItem}>Ninja Fresh</span>
+      {/* <span className={styles.logo} /> */}
+      <span style={{fontSize: "20px" }}>Naija Fresh</span>
     </Link>
     <ul className={styles.navigation}>
       <li className={styles.navigationItem}>
